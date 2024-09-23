@@ -1,0 +1,433 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+
+  /* Container for limiting width */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* Header */
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .logo {
+    font-size: 40px;
+    font-family: 'Rubik Glitch';
+    font-weight: bold;
+    color: #fff;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  nav ul li {
+    margin-left: 30px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+    font-weight: bold;
+  }
+
+  nav ul li a:hover {
+    color: #d4af37; /* Gold Hover Effect */
+  }
+
+  /* Main Section */
+  .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    flex-wrap: wrap; /* Make items stack on smaller screens */
+  }
+
+  .main .description {
+    max-width: 60%;
+  }
+
+  .main h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .main p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .main img {
+    width: 400px; /* Adjust the size as needed */
+    height: auto;
+    margin-left: 20px;
+  }
+
+  /* Modules Section */
+  .modules {
+    width: 80%;
+    max-width: 800px;
+    margin-top: 50px;
+    margin: 0 auto;
+  }
+
+  .module {
+    background-color: #111;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .module:hover {
+    background-color: #222;
+  }
+
+  .module h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .module-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #222;
+    padding: 0 15px;
+    border-radius: 5px;
+  }
+
+  .module-content ul {
+    list-style-type: none;
+    padding: 10px 0;
+    margin: 0;
+  }
+
+  .module-content ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+  }
+
+  .module-content ul li:last-child {
+    border-bottom: none;
+  }
+
+  .module-content ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .module-content ul li a:hover {
+    color: #d4af37;
+  }
+
+  /* New Section: Course Audience */
+  .course-audience {
+    margin-top: 50px;
+  }
+
+  .audience-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between the columns */
+    flex-wrap: wrap; /* Makes it responsive and stack on smaller screens */
+  }
+
+  .audience-column-for {
+    flex: 1 1 48%; /* Take 48% of the width and maintain 2 columns */
+    background-color: #111;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Ensure padding does not affect width */
+  }
+
+  .audience-column-not-for {
+    flex: 1 1 48%; /* Take 48% of the width and maintain 2 columns */
+    background-color: #111;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Ensure padding does not affect width */
+  }
+
+  .audience-column-for h2 {
+    font-size: 24px;
+    color: #55a862; /* Gold heading */
+    margin-bottom: 15px;
+  }
+
+  .audience-column-not-for h2 {
+    font-size: 24px;
+    color: #d4af37; /* Gold heading */
+    margin-bottom: 15px;
+  }
+
+  .audience-column-for ul,
+  .audience-column-not-for ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .audience-column-for ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    border-left: 3px solid #55a862; /* Gold line */
+    padding-left: 10px;
+  }
+
+  .audience-column-not-for ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    border-left: 3px solid #d4af37; /* Gold line */
+    padding-left: 10px;
+  }
+
+  /* New Section: Course Packs */
+  .course-packs {
+    margin-top: 50px;
+  }
+
+  .packs-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between the two packs */
+    flex-wrap: wrap; /* Responsive for smaller screens */
+  }
+
+  .pack-column {
+    flex: 1 1 48%; /* Two columns each taking 48% width */
+    background-color: #111;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* To align the button at the bottom */
+    justify-content: space-between; /* Ensure button stays at the bottom */
+    min-height: 400px; /* Ensure both columns have the same minimum height */
+  }
+
+  .pack-column h2 {
+    font-size: 40px;
+    color: #ffffff; /* Gold color for headings */
+    margin-bottom: 15px;
+    font-family: 'Rubik Glitch';
+  }
+
+  .pack-column ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .pack-column ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    border-left: 3px solid #d4af37; /* Gold accent line */
+    padding-left: 10px;
+  }
+
+  .li-crossed {
+    text-decoration: line-through;
+    opacity: 50%;
+  }
+
+  .buy-button {
+    background-color: #d4af37; /* Gold button */
+    color: #000;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: auto; /* Ensures the button stays at the bottom */
+  }
+
+  .buy-button:hover {
+    background-color: #c3952d; /* Slightly darker gold on hover */
+  }
+
+  /* New Section: Video Player */
+  .video-section {
+    margin-top: 50px;
+  }
+
+  .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background-color: #111;
+  }
+
+  .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px; /* Rounded corners for the video */
+  }
+
+  /* Hurry Up Message */
+  .hurry-up-message {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #d4af37; /* Gold color for the message */
+  }
+
+  .hurry-up-message p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows text to wrap on small screens */
+  }
+
+  /* Price Styling */
+  .price {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .crossed-price {
+    text-decoration: line-through;
+    color: #d4af37; /* Red color for crossed-out price */
+  }
+
+  .sale-price {
+    font-weight: bold;
+    color: #ff6666; /* Gold color for sale price */
+  }
+
+  /* After sale ends, style original price as sale price */
+  .no-sale .crossed-price {
+    text-decoration: none;
+    color: #d4af37; /* Gold color for the old crossed price */
+    font-weight: bold;
+  }
+
+  .no-sale .sale-price {
+    display: none; /* Hide the sale price */
+  }
+
+  /* Keep packs on one line */
+  .packs-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .pack-column {
+    flex: 1 1 45%; /* Adjust flex to keep them in a row */
+    margin: 10px;
+  }
+
+  /* Marquee Container */
+.marquee-container {
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #111; /* Dark gray background */
+    height: 50px; /* Smaller height */
+    display: flex;
+    align-items: center; /* Align text vertically in the middle */
+  }
+  
+  /* Marquee Content */
+  .marquee-content {
+    display: flex;
+    white-space: nowrap; /* Ensure text stays on one line */
+    animation: marquee 10s linear infinite; /* Adjust speed for smooth infinite scrolling */
+  }
+  
+  /* Marquee Items */
+  .marquee-item {
+    display: inline-block;
+    font-size: 18px;
+    color: #ffffff; /* Gold color for text */
+    font-weight: bold;
+  }
+
+  /* Left to Right Animation */
+  @keyframes marquee {
+    0% {
+      transform: translateX(0); /* Start at the beginning */
+    }
+    100% {
+      transform: translateX(-33.33%); /* Move left by one-third of the total width of the content */
+    }
+  }
+
+  /* Larger Spaces */
+    @media (min-width: 769px) { /* For PC version */
+        .marquee-item {
+        margin-right: 100px; /* Larger spaces between items on PC */
+        }
+    }
+
+  /* Media Query for Mobile */
+  @media screen and (max-width: 768px) {
+    .main {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .main img {
+      margin: 0 0 20px 0;
+      width: 100%; /* Full width image on mobile */
+    }
+
+    .main .description {
+      max-width: 100%;
+      margin-bottom: 20px; /* Spacing between photo and text */
+    }
+
+    .modules {
+      width: 100%; /* Full width for modules */
+    }
+
+    .logo {
+      font-size: 22px;
+      font-family: 'Rubik Glitch';
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .audience-column {
+      flex: 1 1 100%; /* Full width on smaller screens */
+    }
+
+    .pack-column {
+      flex: 1 1 100%; /* Full width on smaller screens */
+      margin-bottom: 20px;
+    }
+
+    .marquee-item {
+        margin-right: 20px; /* Smaller spaces between items on mobile */
+      }
+  }
